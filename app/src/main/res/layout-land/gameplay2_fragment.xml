@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryLightColor">
+
+
+        <androidx.gridlayout.widget.GridLayout
+
+            android:id="@+id/choice_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:padding="4dp"
+            app:alignmentMode="alignBounds"
+            app:columnCount="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game2Title"
+            app:layout_constraintVertical_bias="0.261"
+            app:rowOrderPreserved="false"
+            app:useDefaultMargins="true">
+
+
+            <ImageView
+                android:id="@+id/card1back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card1_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(0)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card1front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="0"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="0"-->
+            <!--                app:srcCompat="@drawable/memoryspidercardfront" />-->
+
+            <ImageView
+                android:id="@+id/card2back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card2_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(1)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card2front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="1"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="0"-->
+            <!--                app:srcCompat="@drawable/memorypigcardfront" />-->
+
+            <ImageView
+                android:id="@+id/card3back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card3_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(2)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card3front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="2"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="0"-->
+            <!--                app:srcCompat="@drawable/memoryhorsecardfront" />-->
+
+            <ImageView
+                android:id="@+id/card4back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card4_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(3)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card4front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="3"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="0"-->
+            <!--                app:srcCompat="@drawable/memoryhencardfront" />-->
+
+            <ImageView
+                android:id="@+id/card5back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card5_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(4)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card5front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="4"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="0"-->
+            <!--                app:srcCompat="@drawable/memorypigcardfront" />-->
+
+            <ImageView
+                android:id="@+id/card6back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card6_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(5)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card6front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="0"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="1"-->
+            <!--                app:srcCompat="@drawable/memorygarbagemancardfront" />-->
+
+            <ImageView
+                android:id="@+id/card7back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card7_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(6)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card7front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="1"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="1"-->
+            <!--                app:srcCompat="@drawable/memoryhorsecardfront" />-->
+
+            <ImageView
+                android:id="@+id/card8back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card8_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(7)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card8front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="2"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="1"-->
+            <!--                app:srcCompat="@drawable/memoryspidercardfront" />-->
+
+            <ImageView
+                android:id="@+id/card9back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card9_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(8)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card9front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="3"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="1"-->
+            <!--                app:srcCompat="@drawable/memorygarbagemancardfront" />-->
+
+            <ImageView
+                android:id="@+id/card10back"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card10_string"
+                app:cardImage="@{viewModel.gameCardsLiveData2.get(9)}"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                app:srcCompat="@drawable/allcardbacks" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/card10front"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:alpha="0"-->
+            <!--                app:layout_column="4"-->
+            <!--                app:layout_columnWeight="1"-->
+            <!--                app:layout_gravity="fill_horizontal"-->
+            <!--                app:layout_row="1"-->
+            <!--                app:srcCompat="@drawable/memoryhencardfront" />-->
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/game2Title"
+            style="@style/memoryText_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/game2Button_string"
+            android:text="@string/game2Button_string"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintStart_toEndOf="@+id/backButtonView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backButtonView"
+            android:layout_width="67dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/backButton_string"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backnavbutton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="memory_game_string">Memory Game</string>
+    <string name="direction_string">Select from the following buttons to test your MEMORY</string>
+    <string name="gameView1Des_string">Game 1 has a 3x4 layout to test <br /> YOUR SKILL</string>
+    <string name="gameView2Des_string">Game 2 has a 5x2 layout to test <br /> YOUR SKILL</string>
+    <string name="gameView3Des_string">Game 3 has a 4x4 layout to test <br /> YOUR SKILL</string>
+    <string name="gameView4Des_string">Game 4 has a 4x5 layout to test <br /> YOUR SKILL</string>
+    <string name="game1Button_string">Game 1</string>
+    <string name="game2Button_string">Game 2</string>
+    <string name="game3Button_string">Game 3</string>
+    <string name="game4Button_string">Game 4</string>
+    <string name="card1_string">Card 1</string>
+    <string name="card2_string">Card 2</string>
+    <string name="card3_string">Card 3</string>
+    <string name="card4_string">Card 4</string>
+    <string name="card5_string">Card 5</string>
+    <string name="card6_string">Card 6</string>
+    <string name="card7_string">Card 7</string>
+    <string name="card8_string">Card 8</string>
+    <string name="card9_string">Card 9</string>
+    <string name="card10_string">Card 10</string>
+    <string name="card11_string">Card 11</string>
+    <string name="card12_string">Card 12</string>
+    <string name="backButton_string">"Back Button "</string>
+    <string name="card13_string">Card 13</string>
+    <string name="card14_string">Card 14</string>
+    <string name="card15_string">Card 15</string>
+    <string name="card16_string">Card 16</string>
+    <string name="card17_string">Card 17</string>
+    <string name="card18_string">Card 18</string>
+    <string name="card19_string">Card 19</string>
+    <string name="card20_string">Card 20</string>
+</resources>

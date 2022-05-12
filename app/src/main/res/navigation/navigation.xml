@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/lobbyFragment">
+
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="com.example.memorygame.lobby.LobbyFragment"
+        android:label="LobbyFragment"
+        tools:layout="@layout/lobby_fragment">
+        <action
+            android:id="@+id/action_lobbyFragment_to_gamePlay1Fragment"
+            app:destination="@id/gamePlay1Fragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_gamePlay2Fragment"
+            app:destination="@id/gamePlay2Fragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_gamePlay3Fragment"
+            app:destination="@id/gamePlay3Fragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_gamePlay4Fragment"
+            app:destination="@id/gamePlay4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePlay1Fragment"
+        android:name="com.example.memorygame.game1.GamePlay1Fragment"
+        android:label="GamePlay1Fragment"
+        tools:layout="@layout/gameplay1_fragment">
+        <action
+            android:id="@+id/action_gamePlay1Fragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePlay2Fragment"
+        android:name="com.example.memorygame.game2.GamePlay2Fragment"
+        android:label="GamePlay2Fragment"
+        tools:layout="@layout/gameplay2_fragment">
+        <action
+            android:id="@+id/action_gamePlay2Fragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePlay3Fragment"
+        android:name="com.example.memorygame.game3.GamePlay3Fragment"
+        android:label="GamePlay3Fragment"
+        tools:layout="@layout/gameplay3_fragment">
+        <action
+            android:id="@+id/action_gamePlay3Fragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePlay4Fragment"
+        android:name="com.example.memorygame.game4.GamePlay4Fragment"
+        android:label="GamePlay4Fragment"
+        tools:layout="@layout/gameplay4_fragment">
+        <action
+            android:id="@+id/action_gamePlay4Fragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+</navigation>
